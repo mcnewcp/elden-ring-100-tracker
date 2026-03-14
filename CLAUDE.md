@@ -24,7 +24,9 @@ Items are identified by composite keys generated at render time:
 
 ### The DATA Array
 
-The `DATA` array in `index.html` defines all sections, subsections, and items. Each item has `text` and `tags` (boss, legendary, key, quest, missable, achievement). The render loop builds IDs from this structure.
+The `DATA` array in `index.html` defines all sections, subsections, and items. Each item has `text` and `tags` (boss, legendary, key, quest, missable, achievement, build). The render loop builds IDs from this structure.
+
+Subsections can also have a `sub_text` field for descriptive/guide text displayed below the subsection header (used in build guide sections).
 
 ## Critical Rules
 
@@ -52,4 +54,4 @@ CLAUDE.md        — This file
 
 ## Tags Reference
 
-Items can have these tags: `boss`, `legendary`, `key` (key item), `quest`, `missable`, `achievement`. Tags affect display styling (color-coded badges).
+Items can have these tags: `boss`, `legendary`, `key` (key item), `quest`, `missable`, `achievement`, `build` (build-related item). Tags affect display styling (color-coded badges).
